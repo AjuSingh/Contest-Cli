@@ -2,14 +2,23 @@
   "name": "contest-cli",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "bin": {
+    "contest": "./dist/index.js"
+  },
   "scripts": {
     "build": "npx tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "cli",
+    "npmtool",
+    "coding contest"
+  ],
+  "author": "Ajvinder Singh",
   "license": "ISC",
+  "repository": "https://github.com/AjuSingh/Contest-Cli",
+  "homepage": "https://github.com/AjuSingh/Contest-Cli#readme",
   "devDependencies": {
     "@types/figlet": "^1.5.8",
     "@types/node": "^20.11.24",
