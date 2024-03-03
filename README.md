@@ -21,6 +21,8 @@ npm i -g contest-cli
 ```
 https://clist.by/api/v4/doc/
 ```
+<img width="1397" alt="Screenshot 2024-03-03 at 12 26 24 PM" src="https://github.com/AjuSingh/Contest-Cli/assets/69449848/2c89603c-3eeb-47ed-ba0f-f3cea2dd5cc0">
+
 
 <p>3. Login through credentials</p>
 
