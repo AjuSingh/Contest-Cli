@@ -8,7 +8,7 @@
 
 [https://www.npmjs.com/package/contest-cli](https://www.npmjs.com/package/contest-cli)
 
-`<h2>`🛠️ Installation Steps:`</h2>`
+<h2>🛠️ Installation Steps:</h2>
 
 <p>1. Install Npm Package</p>
 
@@ -34,3 +34,8 @@ Technologies used in the project:
 
 * NodeJS
 * Typescript
+
+<h2>Screenshots</h2>
+<img width="1028" alt="Screenshot 2024-03-03 at 12 07 16 PM" src="https://github.com/AjuSingh/Contest-Cli/assets/69449848/7c0a0d1b-85db-40ae-a1f4-cc25cc2c0944">
+
+
