@@ -1,8 +1,9 @@
 type params = {
     host__iregex?: string;
     start__gte?: string;
-    end_lte?: string;
-    order?: 'start';
+    end__lte?: string;
+    order_by?: 'start';
+    limit?: string;
 }
 
 type ContestMeta = {

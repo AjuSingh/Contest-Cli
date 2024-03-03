@@ -1,6 +1,6 @@
 import axios from "axios";
 import { getCredentials } from "./store";
-import chalk from "chalk";
+import Table from 'cli-table3';
 
 const endpoint = 'https://clist.by/api/v4/contest/';
 
@@ -17,9 +17,10 @@ export const contest = async (data: params) => {
         }
         console.log(url.toString());
         const response = await axios.get(url.toString());
-        const result: ContestObject[] = response.data;
+        const result: ContestResponse = response.data;
+
         if (result) {
-            displayContestsTable(result);
+            displayContestsTable(result.objects);
         }
     } catch (err: any) {
         console.log('Please check your credentials!');
@@ -29,6 +30,12 @@ export const contest = async (data: params) => {
 
 
 function displayContestsTable(contests: ContestObject[]): void {
-    console.log(contests);
-    // console.table(contests,['event','start','end','href'])
+    const keys = ['event', 'href', 'start', 'end'];
+    const table = new Table({ head: keys });
+    const arr = contests.slice(0, 10);
+    arr.forEach((contest) => {
+        const { event, href, start, end } = contest;
+        table.push([event, href, start, end]);
+    })
+    console.log(table.toString());
 }
