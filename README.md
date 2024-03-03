@@ -1,4 +1,3 @@
-
 <h1 align="center" id="title">Contest CLI</h1>
 
 <p align="center"><img src="https://socialify.git.ci/AjuSingh/Contest-Cli/image?language=1&owner=1&name=1&stargazers=1&theme=Light" alt="project-image"></p>
@@ -14,7 +13,7 @@
 <p>1. Install Npm Package</p>
 
 ```
-npm i contest-cli
+npm i -g contest-cli
 ```
 
 <p>2. Go to clist site and copy username and key after login</p>
