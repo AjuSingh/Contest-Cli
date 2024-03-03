@@ -15,7 +15,6 @@ export const contest = async (data: params) => {
         for (let [key, value] of Object.entries(data)) {
             url.searchParams.set(key, value);
         }
-        console.log(url.toString());
         const response = await axios.get(url.toString());
         const result: ContestResponse = response.data;
 
